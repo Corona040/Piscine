@@ -1,0 +1,30 @@
+KO
+makefile (mustnt relink)
+
+KO (?)
+stdin
+
+OK (?)
+when you receive more than one map in arg, each solution or map error must be 'followed by a line break'
+
+OK
+norminette
+
+OK
+valid map rules:
+	y all lines must have the same length
+	y at least one line of at least one box
+	y at the end of each end of line, theres a line break
+	y the chars can only be introduced in the first line
+	y no char missing from first lie
+	y no two identical chars
+	y chars can be any printable char
+	y if invalid -> "map error\n" go next
+
+OBS
+I changed can_start() function from solve2.c
+There were more than 25 lines
+You were using two int variables l and c
+Their uses seemed not to overlap
+So I made a new int i, and changed both l and c to i
+recicled the variable
